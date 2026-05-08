@@ -89,7 +89,7 @@ function agregarNumeros(numeros) {
   //return suma;
  let suma = 0;
   for (let i = 0; i < numeros.length; i++) {
-    suma += numeros[i];
+    suma += numeros[i];       // += suma el valor a la variable y lo guarda en la misma variable
   }
   return suma;
 }
@@ -165,8 +165,8 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let numero = n.toString();
-  return numero[0] === "9";
+  let numero = n.toString();           // . sirve para acceder a una propiedad o metodo
+  return numero[0] === "9";            // toString() es un metodo que convierte a texto
 }
 
 
