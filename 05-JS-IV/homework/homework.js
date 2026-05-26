@@ -6,17 +6,15 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-   // Crear el objeto
-    const gato = {
-      nombre: nombre,
-      edad: edad,
-      meow: function () {
-        return "Meow!";
-      }
-    };
+  const gato = {
+    nombre: nombre,
+    edad: edad,
+    meow: function () {
+    return "Meow!";
+    }
+  };
 
-    // Devolver el objeto
-    return gato;
+  return gato;
 }
 
 function agregarPropiedad(objeto, property) {
@@ -24,11 +22,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-    // Agregar la propiedad con valor null
-    objeto[property] = null;
-
-    // Devolver el objeto
-    return objeto;
+  objeto[property] = null;
+  return objeto;
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -71,7 +66,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  return usuario.email !== undefined;
+  return !!usuario.email;
 }
 
 
@@ -83,7 +78,7 @@ function tienePropiedad(objeto, propiedad) {
   // Tu código:
 
   // propiedad o key  es un nombre que identifica un valor dentro de un objeto
-  return objeto.hasOwnProperty("propiedad");
+  return objeto.hasOwnProperty(propiedad);
   // .hasOwnProperty es un método de los objetos en JavaScript que sirve para preguntar:
   // ¿Este objeto tiene esta propiedad directamente?
 }
